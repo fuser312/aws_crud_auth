@@ -1,0 +1,6 @@
+type ItemInfo @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Name: String
+  Price: Float
+}
+ 
