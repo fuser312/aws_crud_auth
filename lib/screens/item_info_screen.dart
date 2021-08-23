@@ -14,58 +14,64 @@ class _ItemInfoState extends State<ItemInfoScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          ElevatedButton(
-            onPressed: () => create(),
-            child: Text('Create'),
-            style: ElevatedButton.styleFrom(
-                primary: Colors.green,
-                textStyle: TextStyle(
-                  color: Colors.white,
-                )),
-          ),
+      appBar: AppBar(
+        title: Text("CRUD Operations"),
+      ),
+      body: Center(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton(
+              onPressed: () => create(),
+              child: Text('Create'),
+              style: ElevatedButton.styleFrom(
+                  primary: Colors.green,
+                  textStyle: TextStyle(
+                    color: Colors.white,
+                  )),
+            ),
 
-          // READ ALL
-          ElevatedButton(
-            onPressed: () => readAll(),
-            child: Text('Read All'),
-            style: ElevatedButton.styleFrom(
-                primary: Colors.blue,
-                textStyle: TextStyle(
-                  color: Colors.white,
-                )),
-          ),
-          ElevatedButton(
-            onPressed: () => readById(),
-            child: Text('Read by Id'),
-            style: ElevatedButton.styleFrom(
-                primary: Colors.green,
-                textStyle: TextStyle(
-                  color: Colors.white,
-                )),
-          ),
+            // READ ALL
+            ElevatedButton(
+              onPressed: () => readAll(),
+              child: Text('Read All'),
+              style: ElevatedButton.styleFrom(
+                  primary: Colors.blue,
+                  textStyle: TextStyle(
+                    color: Colors.white,
+                  )),
+            ),
+            ElevatedButton(
+              onPressed: () => readById(),
+              child: Text('Read by Id'),
+              style: ElevatedButton.styleFrom(
+                  primary: Colors.green,
+                  textStyle: TextStyle(
+                    color: Colors.white,
+                  )),
+            ),
 
-          ElevatedButton(
-            onPressed: () => update(),
-            child: Text('Update'),
-            style: ElevatedButton.styleFrom(
-                primary: Colors.green,
-                textStyle: TextStyle(
-                  color: Colors.white,
-                )),
-          ),
-          ElevatedButton(
-            onPressed: () => delete(),
-            child: Text('Delete'),
-            style: ElevatedButton.styleFrom(
-                primary: Colors.green,
-                textStyle: TextStyle(
-                  color: Colors.white,
-                )),
-          ),
-        ],
+            ElevatedButton(
+              onPressed: () => update(),
+              child: Text('Update'),
+              style: ElevatedButton.styleFrom(
+                  primary: Colors.green,
+                  textStyle: TextStyle(
+                    color: Colors.white,
+                  )),
+            ),
+            ElevatedButton(
+              onPressed: () => delete(),
+              child: Text('Delete'),
+              style: ElevatedButton.styleFrom(
+                  primary: Colors.green,
+                  textStyle: TextStyle(
+                    color: Colors.white,
+                  )),
+            ),
+          ],
+        ),
       ),
     );
   }

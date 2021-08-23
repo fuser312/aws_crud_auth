@@ -53,7 +53,7 @@ class _AddItemState extends State<AddItem> {
           height: 20,
         ),
         CustomButton(
-            text: 'Register',
+            text: 'Add',
             onTap: () async {
               final myItem = ItemInfo(
                 id: idController.text,

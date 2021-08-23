@@ -123,7 +123,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             CustomButton(
-              text: 'Confirm Sign Up',
+              text: 'Confirm Sign Up and log in',
               onTap: () async {
                 SignUpResult res = await Amplify.Auth.confirmSignUp(
                     username: nameController.text,
